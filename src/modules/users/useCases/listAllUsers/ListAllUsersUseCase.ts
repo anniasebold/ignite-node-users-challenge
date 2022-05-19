@@ -16,7 +16,7 @@ class ListAllUsersUseCase {
     }
 
     if (!userById.admin) {
-      throw new Error("User not allowed for this action");
+      throw new Error("User not allowed");
     }
 
     const users = this.usersRepository.list();
