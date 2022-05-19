@@ -51,11 +51,9 @@ class UsersRepository implements IUsersRepository {
       updated_at: new Date(),
     });
 
-    const userUpdatedIndex = this.users.findIndex(
-      (userUpdated) => receivedUser === userUpdated
-    );
+    const userUpdated = this.users.find((user) => receivedUser === user);
 
-    return this.users[userUpdatedIndex];
+    return userUpdated;
   }
 
   list(): User[] {
