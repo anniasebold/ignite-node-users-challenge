@@ -15,6 +15,10 @@ Após isso inicialize o servidor
     
     yarn dev
 
+Para visualizar a documentação:
+
+    localhost:3000/api-docs
+
 Para executar os testes rode o comando abaixo
 
     yarn test
